@@ -14,7 +14,7 @@
 
 
 
-Mi nombre es ....., este es mi primer proyecto de ETL para  SoyHenry.
+Mi nombre es Angel Zavaleta, este es mi primer proyecto de ETL para SoyHenry.
 
 
 
