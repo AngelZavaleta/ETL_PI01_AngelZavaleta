@@ -20,9 +20,9 @@ Mi nombre es Angel Zavaleta, este es mi primer proyecto de ETL para SoyHenry.
 
 ## **Propuesta de trabajo**
 
-El proyecto consiste en realizar una ingesta de datos desde diversas fuentes, posteriormente aplicar las transformaciones que consideren pertinentes, y luego disponibilizar los datos limpios para su consulta a través de una API. Esta API deberán construirla en un entorno virtual dockerizado.
+El proyecto consiste en realizar una ingesta de datos desde diversas fuentes, posteriormente aplicar las transformaciones que se consideren pertinentes, y luego disponibilizar los datos limpios para su consulta a través de una API. Esta API se construirá en un entorno virtual dockerizado.
 
-Los datos serán provistos en archivos de diferentes extensiones, como *csv* o *json*. Se espera que realicen un EDA para cada dataset y corrijan los tipos de datos, valores nulos y duplicados, entre otras tareas. Posteriormente, tendrán que relacionar los datasets así pueden acceder a su información por medio de consultas a la API.
+Los datos fueron provistos en archivos de diferentes extensiones, como csv o json. Se espera un EDA para cada dataset y se corrijan los tipos de datos, valores nulos y duplicados, entre otras tareas. Posteriormente, se relacionan los datasets y así poder acceder a su información por medio de consultas a la API.
 
 ## **Tecnologias usadas**
 
@@ -40,26 +40,17 @@ Los datos serán provistos en archivos de diferentes extensiones, como *csv* o *
 </p>  
   
 
-## **Pasos realizados**  
 
-+ Extraccion y subida de archivos.  
-
-+ Limpieza de datos.  
-  
-+ Subida de los archivos a la base de datos.  
-
-+ Crear la api con FastApi.  
-
-+ Crear una imagen de la api y luego un container en Docker. 
-
-+ Mi video:  
+Se genera una conexion con MySQL para hacer consultas y se traen de vuelta a VisutalStudioCode (VSC). Así se dockerizan e importan a fastAPI.
+En main.py se generan la conexiones con uvicorn y otros archivos.
+En config.py se genera la conexion con MySQL. 
+En model.py se TIENE que igualar la informacion con MySQL(WorkBench).
+en router.py se hacen las consultas.
 
 
+## **Conclusión.** 
 
-
-## **Fin** 
-
-Muchas gracias por llegar hasta aqui! Un saludo cordial.  
+El EDA (ETL) tiene como base el criterio de la persona que analiza la informacion entregada y poder hacer uso de herramientas (pandas, sqlalchemy, etc...) para optimizar la limpieza de los archivos(datos),y al fin y al cabo, poder realizar un analisis de calidad.
 
 
 <p align="center">
